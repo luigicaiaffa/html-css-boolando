@@ -47,6 +47,10 @@ body {
   font-weight: bold;
 }
 
+.product-type.no-sale {
+  left: 0;
+}
+
 .add-to-wishlist {
   background-color: white;
   position: absolute;
@@ -78,15 +82,35 @@ body {
   font-size: 0.9rem;
 }
 
+/* ! HOVER UTILS */
+
+.hover-img {
+  display: none;
+}
+
+.product-card:hover > .base-img {
+  display: none;
+}
+
+.product-card:hover > .hover-img {
+  display: block;
+}
+
+.add-to-wishlist:hover {
+  color: red;
+  cursor: pointer;
+}
+
 /* ! MAIN SECTION */
 
 .product-card {
   width: 300px;
   margin: 20px;
   position: relative;
+  cursor: pointer;
 
   /* ? DEBUG */
-  background-color: #a8a8a8;
+  /* background-color: #a8a8a8; */
 }
 
 .product-card-section > .container {
