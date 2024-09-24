@@ -12,6 +12,16 @@ img {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  margin: 100px 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
 }
 
 /* ! UTILS */
@@ -101,6 +111,51 @@ body {
   cursor: pointer;
 }
 
+/* ! PAGE HEADER */
+
+.page-header {
+  background-color: #ff6900;
+  padding: 15px;
+  border-bottom: 2px solid #e7e7e5;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.page-header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+}
+
+.header-left-nav li,
+.header-right-nav li {
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+.header-left-nav,
+.header-right-nav {
+  width: 300px;
+}
+
+.header-left-nav {
+  font-size: 0.9rem;
+}
+
+.header-right-nav {
+  text-align: right;
+}
+
+.header-logo {
+  width: 160px;
+}
+
 /* ! MAIN SECTION */
 
 .product-card {
@@ -108,9 +163,6 @@ body {
   margin: 20px;
   position: relative;
   cursor: pointer;
-
-  /* ? DEBUG */
-  /* background-color: #a8a8a8; */
 }
 
 .product-card-section > .container {
