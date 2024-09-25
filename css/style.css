@@ -103,7 +103,7 @@ a {
 }
 
 .product-card:hover > .hover-img {
-  display: block;
+  display: inline;
 }
 
 .add-to-wishlist:hover {
